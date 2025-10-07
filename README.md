@@ -1,17 +1,44 @@
-<h1 align="center">Hi 👋, I'm akanksha-mahajan</h1>
-<h3 align="center">data analyst</h3>
+# 📊 Blinkit Sales Dashboard (Power BI)
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=akanksha-mahajan&label=Profile%20views&color=0e75b6&style=flat" alt="akanksha-mahajan" /> </p>
+### 🚀 Project Overview
+This project is an interactive **Power BI Dashboard** created to analyze and visualize sales performance data for **Blinkit**, India’s last-minute delivery app.  
+The dashboard provides insights into **total sales, average sales, item performance, outlet types, and customer ratings** — enabling data-driven decision-making for business optimization.
 
-- 📫 How to reach me **mahajanakanksha26@gmail.com**
+---
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-</p>
+## 🧩 Key Features
+- **💰 Total Sales Analysis:** Displays total revenue ($1.20M) and highlights top-performing categories.
+- **📦 Item Insights:** Visualizes the number of items sold and average ratings.
+- **🏪 Outlet Performance:** Compares sales across outlet sizes, types, and locations.
+- **📈 Trend Analysis:** Tracks total sales growth over the years.
+- **🥛 Fat Content Segmentation:** Breaks down sales by low-fat vs. regular products.
+- **⚙️ Interactive Filters:** Allows users to slice data by:
+  - Outlet Location Type
+  - Outlet Size
+  - Item Type
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> </p>
+---
 
-<p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=akanksha-mahajan&show_icons=true&locale=en&layout=compact" alt="akanksha-mahajan" /></p>
+## 📁 Data Model
+The dataset includes the following key fields:
+- **Outlet Type**
+- **Outlet Size**
+- **Outlet Location Type**
+- **Item Type**
+- **Fat Content**
+- **Total Sales**
+- **Number of Items**
+- **Average Sales**
+- **Average Ratings**
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=akanksha-mahajan&" alt="akanksha-mahajan" /></p>
+Data is cleaned, transformed, and modeled within Power BI using DAX measures and relationships.
+
+---
+
+## 🧮 DAX Measures Used
+Some custom DAX measures used in this dashboard include:
+```DAX
+Total Sales = SUM(Sales[Total])
+Avg Sales = AVERAGE(Sales[Total])
+No of Items = COUNT(Sales[Item])
+Avg Ratings = AVERAGE(Sales[Rating])
